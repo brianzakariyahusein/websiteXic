@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xicasic</title>
+
+    <!-- css style -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- script js -->
+    <script src="/assets/js/script.js"></script>
+
+    <!-- google font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Concert+One&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar" id="nav">
+      <div class="navbar-logo">
+        <a href="#home">XICASIC</a>
+      </div>
+      <div class="navbar-link">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#announcement">Announcement</a>
+      </div>
+
+      <!-- SideBar nav -->
+      <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()"
+          >×</a
+        >
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#announcement">Announcement</a>
+      </div>
+      <button class="openbtn" onclick="openSidebar()">☰</button>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="section">
+      <!-- Home Slideshow Image -->
+      <div class="container">
+        <div class="slide">
+          <div class="wrapper">
+            <img src="/assets/image/homepage1.png" alt="" draggable="false" />
+            <img src="/assets/image/homepage2.png" alt="" draggable="false" />
+            <img src="/assets/image/homepage3.png" alt="" draggable="false" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Prodi Jurusan -->
+      <div class="prodi">
+        <div class="prodiText">
+          <h1>Program Studi Jurusan</h1>
+          <p>
+            Teknik Sipil, Teknik Mesin, Teknik Elektro, Teknik Kimia,
+            Arsitektur, Pendidikan Fisika, Pendidikan Matematika, Fisika,
+            Matematika, Ilmu Kelautan, Teknik Industri, Informatika, Teknik
+            Geofisika, Statistika, Teknik Pertambangan, Teknik Geologi, Ilmu
+            Tanah, Kehutanan, Ekonomi Pembangunan, Akuntansi, Pendidikan
+            Ekonomi, Ekonomi Perbankan, Perbankan Syariah, Ekonomi Syariah, dan
+            lain-lain.
+          </p>
+        </div>
+        <div class="prodiImg">
+          <img src="/assets/image/prodiImg.png" alt="" draggable="false" />
+        </div>
+      </div>
+
+      <!-- Mapel Wajib -->
+      <div class="card-container">
+        <div class="card-title">
+          <h1>Mata Pelajaran Wajib/Minat</h1>
+        </div>
+        <div class="card-items" style="color: white">
+          <div class="card">
+            <img
+              src="/assets/image/physicIcon.png"
+              alt="Image 1"
+              draggable="false"
+            />
+            <div class="card-description">Fisika</div>
+          </div>
+          <div class="card">
+            <img
+              src="/assets/image/chemicalIcon.png"
+              alt="Image 2"
+              draggable="false"
+            />
+            <div class="card-description">Kimia</div>
+          </div>
+          <div class="card">
+            <img
+              src="/assets/image/economicIcon.png"
+              alt="Image 3"
+              draggable="false"
+            />
+            <div class="card-description">Ekonomi</div>
+          </div>
+          <div class="card">
+            <img
+              src="/assets/image/mathIcon.png"
+              alt="Image 4"
+              draggable="false"
+            />
+            <div class="card-description">Matematika</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Information -->
+
+      <div class="studinfor-container">
+        <div class="cardinfo">
+          <img src="/assets/image/boyStud.jpg" alt="Image 1" />
+          <div class="card-content">
+            <h3>Murid Laki Laki</h3>
+            <p>21 Murid</p>
+          </div>
+        </div>
+        <div class="cardinfo">
+          <img src="/assets/image/girlStud.jpg" alt="Image 2" />
+          <div class="card-content">
+            <h3>Murid Perempuan</h3>
+            <p>13 Murid</p>
+          </div>
+        </div>
+        <div class="cardinfo">
+          <img src="/assets/image/teacher.jpg" alt="Image 3" />
+          <div class="card-content">
+            <h3>Wali Kelas</h3>
+            <p>1 walas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="section">
+      
+    </div>
+    <div id="gallery" class="section">
+      <h1>Gallery</h1>
+      <p>Check out our gallery.</p>
+    </div>
+    <div id="announcement" class="section">
+      <h1>Announcement</h1>
+      <p>Read our latest announcements.</p>
+    </div>
+  </body>
+</html>

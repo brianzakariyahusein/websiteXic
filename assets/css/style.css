@@ -1,0 +1,450 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+/* .section {
+  padding: 60px 20px; Adjust for navbar height
+  margin-top: 60px; Adjust for navbar height
+} */
+.navbar-about {
+  background-color: red; /* Change this color as needed */
+}
+
+/* Navbar */
+.navbar {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #20436f;
+  padding: 25px;
+  box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+.navbar-logo a {
+  font-size: 30px;
+}
+.navbar-link {
+  margin: 5px 20px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: 0 13px;
+  transition: ease-out 0.3s;
+}
+.navbar-link a:hover {
+  background-color: #162e4d;
+  color: #e8ecf0;
+}
+.navbar-link a.active {
+  background-color: #162e4d;
+  color: #e8ecf0;
+}
+
+ /* Sidebar Navigation */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #d3d3d3af;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 180px;
+  font-size: 36px;
+}
+
+.openbtn {
+  position: relative;
+  right: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffffff00;
+  color: white;
+  border: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  transition: 0.5s;
+}
+
+
+/* Home Page */
+#home {
+  height: 100%;
+}
+/*home slideshow */
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 84px 0;
+}
+.slide {
+  width: 95%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: -1px 5px 15px black;
+}
+.wrapper {
+  display: flex;
+  animation: slide 15s infinite;
+}
+.wrapper img {
+  width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+}
+
+/* Prodi Section */
+.prodi {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #466181;
+  color: white;
+  margin: 0 0 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.prodiText {
+  flex: 1;
+  padding: 20px;
+  font-family: "Concert One", sans-serif;
+}
+.prodiText h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+.prodiText p {
+  background-color: #5275a0;
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 1.5;
+}
+.prodiImg {
+  flex: 1;
+  text-align: center;
+}
+.prodiImg img {
+  max-width: 250px;
+  height: auto;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mapel Wajib */
+.card-container {
+  position: relative;
+  font-family: "Concert One", sans-serif;
+  margin: 0 50px 100px;
+  border-radius: 20px;
+  padding: 20px;
+  background-image: url(/assets/image/mapelWjbImg.png);
+  background-repeat: no-repeat; /* Agar gambar tidak diulang */
+  background-size: cover; /* Agar gambar menutupi seluruh area */
+  background-position: center; /* Agar gambar berada di tengah */
+}
+.card-title {
+  text-align: center;
+  color: #fff;
+}
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background-color: #6285b2c1;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 150px;
+  text-align: center;
+}
+.card img {
+  width: 70%;
+  margin: 10px;
+  height: auto;
+}
+.card-description {
+  padding: 10px;
+  border-top: 4px solid #20436fd0;
+  font-size: 16px;
+}
+.studinfor-container {
+  display: flex;
+  margin: 0 0 100px;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+  justify-content: center;
+  font-family: "Concert One", sans-serif;
+}
+.cardinfo {
+  background: #20436fd4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px #20436fa1;
+}
+.cardinfo img {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  margin-top: 0;
+  color: #dadada;
+  text-align: center;
+}
+.card-content p {
+  text-align: center;
+  color: #efefef;
+}
+
+/* Bagian About Us */
+#about {
+  background-color: #E7F0DC;
+  padding: 50px 20px;
+  height: 50rem;
+}
+
+/* Bagian Gallery */
+#gallery {
+  background-color: #d3d3d3;
+  padding: 50px 20px;
+  height: 50rem;
+}
+
+/* Bagian Announcement */
+#announcement {
+  background-color: #c3c3c3;
+  padding: 50px 20px;
+  height: 50rem;
+}
+
+/* Media Queries */
+/* Large devices (desktops) */
+@media (min-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+  .openbtn {
+    display: none;
+  }
+  .slide {
+    position: relative;
+    top: 10px;
+    width: 85%;
+  }
+
+  .prodiText {
+    font-size: 19px;
+    margin: 0 140px;
+  }
+  .cardinfo {
+    width: 250px;
+  }
+  .card-content h3,
+  .card-content p {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (tablets in landscape mode) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sidebar {
+    display: none;
+  }
+  .openbtn {
+    display: none;
+  }
+  .navbar-logo a {
+    font-size: 25px;
+  }
+  .navbar-link a {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+  .slide {
+    position: relative;
+    top: 12px;
+    width: 85%;
+  }
+
+  .prodiText {
+    font-size: 16px;
+    margin: 0 140px;
+  }
+  .cardinfo {
+    width: 220px;
+  }
+  .card-content h3,
+  .card-content p {
+    font-size: 18px;
+  }
+}
+
+/* Small devices (tablets in portrait mode) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+  .openbtn {
+    display: none;
+  }
+  .navbar-logo a {
+    font-size: 25px;
+  }
+  .navbar-link a {
+    font-size: 18px;
+    margin: 0 3px;
+  }
+  .slide {
+    position: relative;
+    top: 40px;
+    width: 83%;
+  }
+
+  .prodiText {
+    font-size: 15px;
+  }
+
+  .cardinfo {
+    width: 200px;
+  }
+  .card-content h3,
+  .card-content p {
+    font-size: 17px;
+  }
+}
+
+/* Extra small devices (phones) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .navbar-link {
+    display: none;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .slide {
+    position: relative;
+    top: 40px;
+    width: 95%;
+  }
+
+  .prodiText {
+    font-size: 14.5px;
+  }
+
+  .cardinfo {
+    width: 190px;
+  }
+  .card-content h3,
+  .card-content p {
+    font-size: 16.9px;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 599px) {
+  .navbar-link {
+    display: none;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .slide {
+    position: relative;
+    top: 40px;
+    width: 98%;
+  }
+
+  .prodiText {
+    font-size: 13px;
+  }
+  .prodiImg {
+    display: none;
+  }
+  .prodiImg img {
+    width: 180px;
+  }
+
+  .cardinfo {
+    width: 155px;
+  }
+  .card-content h3,
+  .card-content p {
+    font-size: 15px;
+  }
+}
