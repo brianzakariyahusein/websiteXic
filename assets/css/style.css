@@ -43,11 +43,11 @@ body {
   transition: ease-out 0.3s;
 }
 .navbar-link a:hover {
-  background-color: #162e4d;
+  background-color: #4141418f;
   color: #e8ecf0;
 }
 .navbar-link a.active {
-  background-color: #162e4d;
+  background-color: #4141418f;
   color: #e8ecf0;
 }
 
