@@ -51,7 +51,7 @@ body {
   color: #e8ecf0;
 }
 
- /* Sidebar Navigation */
+/* Sidebar Navigation */
 .sidebar {
   height: 100%;
   width: 0;
@@ -107,9 +107,14 @@ body {
   transition: 0.5s;
 }
 
-
 /* Home Page */
 #home {
+  background: rgb(231, 240, 220);
+  background: linear-gradient(
+    0deg,
+    rgba(231, 240, 220, 1) 0%,
+    rgba(245, 245, 245, 1) 5%
+  );
   height: 100%;
 }
 /*home slideshow */
@@ -157,35 +162,41 @@ body {
 }
 
 /* Prodi Section */
-.prodi {
+#containerHome {
+  background-color: #466181;
+}
+#containerHome-text p {
+  background-color: #324f6f;
+}
+
+.containerExp {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #466181;
+  /* background-color: #466181; */
   color: white;
   margin: 0 0 100px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.prodiText {
+.containerText {
   flex: 1;
   padding: 20px;
   font-family: "Concert One", sans-serif;
 }
-.prodiText h1 {
+.containerText h1 {
   margin-top: 0;
   font-size: 2em;
 }
-.prodiText p {
-  background-color: #5275a0;
+.containerText p {
   border-radius: 10px;
   padding: 20px;
   line-height: 1.5;
 }
-.prodiImg {
+.containerImg {
   flex: 1;
   text-align: center;
 }
-.prodiImg img {
+.containerImg img {
   max-width: 250px;
   height: auto;
   /* border-radius: 10px; */
@@ -233,8 +244,10 @@ body {
   font-size: 16px;
 }
 .studinfor-container {
+  position: relative;
+  bottom: 100px;
   display: flex;
-  margin: 0 0 100px;
+  padding: 100px 0;
   flex-wrap: wrap-reverse;
   gap: 20px;
   justify-content: center;
@@ -271,9 +284,35 @@ body {
 
 /* Bagian About Us */
 #about {
-  background-color: #E7F0DC;
-  padding: 50px 20px;
-  height: 50rem;
+  background-color: #e7f0dc;
+}
+
+#containerAbout {
+  position: relative;
+  top: 50px;
+  background-color: #c2d9a6;
+}
+#containerAbout-text p {
+  background-color: #94bc64;
+}
+
+.map-container {
+  color: #fff;
+  position: relative;
+  left: 10%;
+  padding: 10px;
+  background-color: #c4daa8;
+  width: 80%;
+  max-width: 800px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
 }
 
 /* Bagian Gallery */
@@ -305,7 +344,7 @@ body {
     width: 85%;
   }
 
-  .prodiText {
+  .containerText {
     font-size: 19px;
     margin: 0 140px;
   }
@@ -339,7 +378,7 @@ body {
     width: 85%;
   }
 
-  .prodiText {
+  .containerText {
     font-size: 16px;
     margin: 0 140px;
   }
@@ -373,7 +412,7 @@ body {
     width: 83%;
   }
 
-  .prodiText {
+  .containerText {
     font-size: 15px;
   }
 
@@ -402,7 +441,7 @@ body {
     width: 95%;
   }
 
-  .prodiText {
+  .containerText {
     font-size: 14.5px;
   }
 
@@ -430,13 +469,13 @@ body {
     width: 98%;
   }
 
-  .prodiText {
+  .containerText {
     font-size: 13px;
   }
-  .prodiImg {
+  .containerImg {
     display: none;
   }
-  .prodiImg img {
+  .containerImg img {
     width: 180px;
   }
 
