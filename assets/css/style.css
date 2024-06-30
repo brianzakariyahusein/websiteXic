@@ -5,13 +5,6 @@ body {
   left: 0;
   padding: 0;
 }
-/* .section {
-  padding: 60px 20px; Adjust for navbar height
-  margin-top: 60px; Adjust for navbar height
-} */
-.navbar-about {
-  background-color: red; /* Change this color as needed */
-}
 
 /* Navbar */
 .navbar {
@@ -50,7 +43,6 @@ body {
   background-color: #4141418f;
   color: #e8ecf0;
 }
-
 /* Sidebar Navigation */
 .sidebar {
   height: 100%;
@@ -64,7 +56,6 @@ body {
   transition: 0.5s;
   padding-top: 60px;
 }
-
 .sidebar a {
   padding: 10px 15px;
   text-decoration: none;
@@ -73,18 +64,15 @@ body {
   display: block;
   transition: 0.3s;
 }
-
 .sidebar a:hover {
   color: #f1f1f1;
 }
-
 .sidebar .closebtn {
   position: absolute;
   top: 0;
   right: 180px;
   font-size: 36px;
 }
-
 .openbtn {
   position: relative;
   right: 50px;
@@ -94,7 +82,6 @@ body {
   color: white;
   border: none;
 }
-
 .overlay {
   height: 100%;
   width: 100%;
@@ -107,15 +94,125 @@ body {
   transition: 0.5s;
 }
 
+/* Content (Container, Box, Card, Etc) */ 
+/* Container Full width */
+.containerExp {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  margin: 0 0 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.containerText {
+  flex: 1;
+  padding: 20px;
+  font-family: "Concert One", sans-serif;
+}
+.containerText h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+.containerText p {
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 1.5;
+}
+.containerImg {
+  flex: 1;
+  text-align: center;
+}
+.containerImg img {
+  max-width: 250px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Container Not Full Width with card */
+.cardContainer {
+  position: relative;
+  font-family: "Concert One", sans-serif;
+  margin: 0 50px 100px;
+  border-radius: 20px;
+  padding: 20px;/
+}
+.card-title {
+  text-align: center;
+}
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  width: 70%;
+  margin: 10px;
+  height: auto;
+}
+.card-description {
+  padding: 10px;
+  font-size: 16px;
+}
+/* Only Card For Student */
+.studentContainer {
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  padding: 100px 0;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+  justify-content: center;
+  font-family: "Concert One", sans-serif;
+}
+.cardStudent {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.35s, box-shadow 0.3s;
+}
+.cardStudent:hover{
+  transform: scale(1.1);
+}
+.cardStudent img {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  margin-top: 0;
+  color: #dadada;
+  text-align: center;
+}
+.card-content p {
+  text-align: center;
+  color: #efefef;
+}
+
+
+
 /* Home Page */
 #home {
-  background: rgb(231, 240, 220);
-  background: linear-gradient(
-    0deg,
-    rgba(231, 240, 220, 1) 0%,
-    rgba(245, 245, 245, 1) 5%
-  );
-  height: 100%;
+  background: rgb(231,240,220);
+background: linear-gradient(0deg, rgba(231,240,220,1) 0%, rgba(167,202,221,1) 8%);
 }
 /*home slideshow */
 .container {
@@ -169,124 +266,38 @@ body {
   background-color: #324f6f;
 }
 
-.containerExp {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  /* background-color: #466181; */
-  color: white;
-  margin: 0 0 100px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.containerText {
-  flex: 1;
-  padding: 20px;
-  font-family: "Concert One", sans-serif;
-}
-.containerText h1 {
-  margin-top: 0;
-  font-size: 2em;
-}
-.containerText p {
-  border-radius: 10px;
-  padding: 20px;
-  line-height: 1.5;
-}
-.containerImg {
-  flex: 1;
-  text-align: center;
-}
-.containerImg img {
-  max-width: 250px;
-  height: auto;
-  /* border-radius: 10px; */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 /* Mapel Wajib */
-.card-container {
-  position: relative;
-  font-family: "Concert One", sans-serif;
-  margin: 0 50px 100px;
-  border-radius: 20px;
-  padding: 20px;
-  background-image: url(/assets/image/mapelWjbImg.png);
+#cardContainer-home .card-title {
+  color: #20436f;
+}
+#cardContainer-home {
+  /* background-image: url(/assets/image/mapelWjbImg.png); */
   background-repeat: no-repeat; /* Agar gambar tidak diulang */
   background-size: cover; /* Agar gambar menutupi seluruh area */
   background-position: center; /* Agar gambar berada di tengah */
 }
-.card-title {
-  text-align: center;
-  color: #fff;
+#cardHome {
+  background-color: #547196d9;
 }
-.card-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+#cardHome .card-description {
+  border-top: 4px solid #20436f;
 }
-.card {
-  background-color: #6285b2c1;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 150px;
-  text-align: center;
-}
-.card img {
-  width: 70%;
-  margin: 10px;
-  height: auto;
-}
-.card-description {
-  padding: 10px;
-  border-top: 4px solid #20436fd0;
-  font-size: 16px;
-}
-.studinfor-container {
-  position: relative;
-  bottom: 100px;
-  display: flex;
-  padding: 100px 0;
-  flex-wrap: wrap-reverse;
-  gap: 20px;
-  justify-content: center;
-  font-family: "Concert One", sans-serif;
-}
-.cardinfo {
+
+/* Student Information */
+#studentContainer-home .cardStudent {
   background: #20436fd4;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 200px;
-  padding: 20px;
-  margin: 10px;
   box-shadow: 0 4px 8px #20436fa1;
 }
-.cardinfo img {
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-.card-content {
-  padding: 20px;
-}
-.card-content h3 {
-  margin-top: 0;
-  color: #dadada;
-  text-align: center;
-}
-.card-content p {
-  text-align: center;
-  color: #efefef;
-}
+
+
 
 /* Bagian About Us */
 #about {
   background-color: #e7f0dc;
 }
 
+/* Explanation */
 #containerAbout {
   position: relative;
   top: 50px;
@@ -296,6 +307,19 @@ body {
   background-color: #94bc64;
 }
 
+/* Website Content */
+#cardContainer-about .card-title{
+  color: #5e941d;
+}
+#cardContainer-about .card {
+  background-color: #94bc64;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#cardContainer-about .card-description {
+  border-top: 4px solid #7bb13a;
+}
+
+/* Location */
 .map-container {
   color: #fff;
   position: relative;
