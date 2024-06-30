@@ -319,10 +319,63 @@ background: linear-gradient(0deg, rgba(231,240,220,1) 0%, rgba(167,202,221,1) 8%
   border-top: 4px solid #7bb13a;
 }
 
+/* Teacher And Student */
+
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.containerAll {
+  display: inline-flex;
+}
+
+.card-student {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card-student img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card-student h3 {
+  margin: 15px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-student p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.card-student:hover {
+  transform: scale(1.1); /* Memperbesar card saat di-hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
 /* Location */
 .map-container {
   color: #fff;
   position: relative;
+  margin: 100px 0;
   left: 10%;
   padding: 10px;
   background-color: #c4daa8;

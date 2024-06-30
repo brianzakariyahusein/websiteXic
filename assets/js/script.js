@@ -55,3 +55,45 @@ function closeSidebar() {
   document.getElementById("sidebar").style.width = "0";
   document.getElementById("overlay").style.display = "none";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  let scrollContainers = document.querySelectorAll(".scroll-container");
+
+  scrollContainers.forEach((scrollContainer) => {
+    let isUserScrolling = false;
+    let scrollAmount = 0;
+    let autoScrollSpeed = 0.5;
+
+    function autoScroll() {
+      if (!isUserScrolling) {
+        scrollAmount += autoScrollSpeed;
+        if (
+          scrollAmount >=
+          scrollContainer.scrollWidth - scrollContainer.clientWidth
+        ) {
+          scrollAmount = 0;
+        }
+        scrollContainer.scrollLeft = scrollAmount;
+      }
+      requestAnimationFrame(autoScroll);
+    }
+
+    autoScroll();
+
+    function startUserScroll() {
+      isUserScrolling = true;
+    }
+
+    function endUserScroll() {
+      isUserScrolling = false;
+      scrollAmount = scrollContainer.scrollLeft;
+    }
+
+    scrollContainer.addEventListener("mousedown", startUserScroll);
+    scrollContainer.addEventListener("mouseup", endUserScroll);
+    scrollContainer.addEventListener("touchstart", startUserScroll);
+    scrollContainer.addEventListener("touchend", endUserScroll);
+    scrollContainer.addEventListener("wheel", startUserScroll);
+    scrollContainer.addEventListener("wheel", endUserScroll);
+  });
+});
