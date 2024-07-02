@@ -38,7 +38,7 @@ document.addEventListener("scroll", function () {
   if (window.scrollY >= announcementOffset - navigationBar.offsetHeight) {
     navigationBar.style.backgroundColor = "green";
   } else if (window.scrollY >= galleryOffset - navigationBar.offsetHeight) {
-    navigationBar.style.backgroundColor = "grey";
+    navigationBar.style.backgroundColor = "#A19882";
   } else if (window.scrollY >= aboutUsOffset - navigationBar.offsetHeight) {
     navigationBar.style.backgroundColor = "#729762";
   } else {

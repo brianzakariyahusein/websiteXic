@@ -97,7 +97,6 @@ body {
 /* Content (Container, Box, Card, Etc) */ 
 /* Container Full width */
 .containerExp {
-  display: flex;
   align-items: center;
   padding: 10px;
   color: white;
@@ -201,6 +200,7 @@ body {
   margin-top: 0;
   color: #dadada;
   text-align: center;
+  
 }
 .card-content p {
   text-align: center;
@@ -294,7 +294,8 @@ background: linear-gradient(0deg, rgba(231,240,220,1) 0%, rgba(167,202,221,1) 8%
 
 /* Bagian About Us */
 #about {
-  background-color: #e7f0dc;
+  background: rgb(254,247,220);
+background: linear-gradient(0deg, rgba(254,247,220,1) 0%, rgba(231,240,220,1) 5%);
 }
 
 /* Explanation */
@@ -320,7 +321,21 @@ background: linear-gradient(0deg, rgba(231,240,220,1) 0%, rgba(167,202,221,1) 8%
 }
 
 /* Teacher And Student */
+.studentTeacher-title {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-family: "Concert One", sans-serif;
+  color: #5e941d;
+}
+#teacher-about {
+  position: relative;
+  top: 50px;
+}
 
+#teacher-about .cardStudent {
+  background-color: #6a9a56;
+}
 
 .scroll-container {
   overflow-x: auto;
@@ -329,74 +344,62 @@ background: linear-gradient(0deg, rgba(231,240,220,1) 0%, rgba(167,202,221,1) 8%
   width: 100%;
   box-sizing: border-box;
 }
-
 .containerAll {
   display: inline-flex;
 }
-
 .card-student {
-  background-color: #fff;
+  background-color: #6a9a56;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 150px;
   margin: 10px;
   text-align: center;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
   display: inline-block;
   vertical-align: top;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
 .card-student img {
   width: 100%;
   height: auto;
   border-radius: 50%;
 }
-
 .card-student h3 {
-  margin: 15px 0 5px;
-  font-size: 18px;
-  color: #333;
+  font-size: 14px;
+  margin: 10px;
+  color: #f0f0f0;
+  white-space: normal;
+  word-wrap: break-word;
 }
-
 .card-student p {
   margin: 0;
   font-size: 14px;
-  color: #777;
+  color: #c1c1c1;
 }
-
 .card-student:hover {
-  transform: scale(1.1); /* Memperbesar card saat di-hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 /* Location */
-.map-container {
-  color: #fff;
-  position: relative;
-  margin: 100px 0;
-  left: 10%;
-  padding: 10px;
-  background-color: #c4daa8;
-  width: 80%;
-  max-width: 800px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-iframe {
-  width: 100%;
-  height: 450px;
-  border: none;
+.maps-container {
+  display: grid;
+  justify-content: center;
+  color: #5e9424;
+  margin-top: 100px;
+  padding-bottom: 150px;
+  font-family: "Concert One", sans-serif;
 }
 
 /* Bagian Gallery */
 #gallery {
-  background-color: #d3d3d3;
-  padding: 50px 20px;
-  height: 50rem;
+  background-color: #FEF7DC;
+  height: 100rem;
+  position: relative;
+  bottom: 21.5px;
+  padding-top: 70px;
 }
 
 /* Bagian Announcement */
@@ -421,9 +424,12 @@ iframe {
     width: 85%;
   }
 
+  .containerExp {
+    display: flex;
+  }
   .containerText {
     font-size: 19px;
-    margin: 0 140px;
+    margin: 0 0 0 60px;
   }
   .cardinfo {
     width: 250px;
@@ -432,10 +438,13 @@ iframe {
   .card-content p {
     font-size: 20px;
   }
+  .card-student {
+    width: 180px;
+  }
 }
 
 /* Medium devices (tablets in landscape mode) */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .sidebar {
     display: none;
   }
@@ -454,10 +463,13 @@ iframe {
     top: 12px;
     width: 85%;
   }
-
+  
+  .containerExp {
+    display: flex;
+  }
   .containerText {
     font-size: 16px;
-    margin: 0 140px;
+    margin: 0 0 0 60px;
   }
   .cardinfo {
     width: 220px;
@@ -466,10 +478,19 @@ iframe {
   .card-content p {
     font-size: 18px;
   }
+  .card-student {
+    width: 160px;
+  }
+  .card-student h3 {
+    font-size: 12.4px;
+  }
+  .card-student p {
+    font-size: 13px;
+  }
 }
 
 /* Small devices (tablets in portrait mode) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .sidebar {
     display: none;
   }
@@ -489,8 +510,13 @@ iframe {
     width: 83%;
   }
 
+  
+  .containerExp {
+    display: flex;
+  }
   .containerText {
     font-size: 15px;
+    margin: 0 0 0 60px;
   }
 
   .cardinfo {
@@ -500,10 +526,23 @@ iframe {
   .card-content p {
     font-size: 17px;
   }
+  .card-student {
+    width: 150px;
+  }
+  .card-student h3 {
+    font-size: 11.5px;
+  }
+  .card-student p {
+    font-size: 12.2px;
+  }
+  iframe {
+    width: 650px;
+    height: 400px;
+  }
 }
 
 /* Extra small devices (phones) */
-@media (min-width: 600px) and (max-width: 767px) {
+@media (min-width: 600px) and (max-width: 768px) {
   .navbar-link {
     display: none;
   }
@@ -518,8 +557,12 @@ iframe {
     width: 95%;
   }
 
+  .containerExp {
+    display: flex;
+  }
   .containerText {
-    font-size: 14.5px;
+    font-size: 13px;
+    margin: 0 0 0 20px;
   }
 
   .cardinfo {
@@ -529,9 +572,25 @@ iframe {
   .card-content p {
     font-size: 16.9px;
   }
+  .card-student {
+    width: 130px;
+  }
+  .card-student h3 {
+    font-size: 13px;
+    width: 160px;
+    position: relative;
+    right: 26px;
+  }
+  .card-student p {
+    font-size: 11.5px;
+  }
+  iframe {
+    width: 550px;
+    height: 380px
+  }
 }
 
-@media (min-width: 340px) and (max-width: 599px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .navbar-link {
     display: none;
   }
@@ -549,9 +608,7 @@ iframe {
   .containerText {
     font-size: 13px;
   }
-  .containerImg {
-    display: none;
-  }
+
   .containerImg img {
     width: 180px;
   }
@@ -562,5 +619,28 @@ iframe {
   .card-content h3,
   .card-content p {
     font-size: 15px;
+  }
+
+  .studentTeacher-title {
+    font-size: 14px;
+  }
+  .card-student {
+    width: 100px;
+    height: auto;
+    padding: 30px;
+  }
+  .card-student h3 {
+    font-size: 12px;
+    width: 150px;
+    position: relative;
+    right: 37px;
+  }
+  .card-student p {
+    font-size: 11.5px;
+  }
+
+  iframe {
+    width: 45vh;
+    height: 300px;
   }
 }
