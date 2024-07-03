@@ -1,3 +1,8 @@
+const msg = 'Website ini masih Tahap pengembangan, Konten yang ada di Website ini hanya Contoh akan seperti apa Websitenya nanti.';
+const msg2 = 'Mohon ditunggu update berikutnya.'
+  alert (msg);
+  alert (msg2);
+
 document.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navbar");
   var navbarLinks = document.querySelectorAll(".navbar a");

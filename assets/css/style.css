@@ -392,22 +392,66 @@ background: linear-gradient(0deg, rgba(254,247,220,1) 0%, rgba(231,240,220,1) 5%
   padding-bottom: 150px;
   font-family: "Concert One", sans-serif;
 }
-
-/* Bagian Gallery */
+/* Bagian Gallery
 #gallery {
   background-color: #FEF7DC;
-  height: 100rem;
   position: relative;
   bottom: 21.5px;
   padding-top: 70px;
 }
 
 /* Bagian Announcement */
-#announcement {
+/* #announcement {
   background-color: #c3c3c3;
   padding: 50px 20px;
   height: 50rem;
+} */
+
+footer {
+  background-color: #345111;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  /* padding: 20px 0; */
+  text-align: center;
+  position: relative;
+  /* bottom: 0; */
+  width: 100%;
+  font-family: "Concert One", sans-serif;
 }
+
+.container-footer {
+  /* border: 2px solid; */
+  /* margin: 0 auto; */
+  padding: 0 20px;
+}
+
+.footer-links {
+  /* list-style-type: none; */
+  padding: 0;
+  /* display: flex; */
+  margin-top: 10px;
+}
+
+.footer-links li {
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f4f4f4;
+}
+
+.medsos-footer img {
+  width: 50px;
+  height: auto;
+}
+
 
 /* Media Queries */
 /* Large devices (desktops) */
